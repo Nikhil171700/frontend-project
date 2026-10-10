@@ -1,0 +1,111 @@
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 6%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 21px;
+    font-weight: 700;
+    color: #2563eb;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-links button,
+.navbar-links a {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.navbar-links button:hover,
+.navbar-links a:hover {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.navbar-links .notification-button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+}
+
+.navbar-links .notification-button:hover {
+    background: #dbeafe;
+}
+
+.notification-icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 12px 4%;
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        width: 100%;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .navbar-links button,
+    .navbar-links a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+}
+
+.notification-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notification-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 19px;
+    height: 19px;
+    padding: 0 5px;
+    border-radius: 50px;
+    background: #dc2626;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+}

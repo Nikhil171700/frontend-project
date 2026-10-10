@@ -1,0 +1,1144 @@
+
+/* =========================================
+   MAIN
+========================================= */
+
+.client-home {
+    min-height: 100vh;
+    background: #f7f8fc;
+    color: #1f2937;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.client-hero {
+    background: linear-gradient(
+        135deg,
+        #eef2ff,
+        #f8fafc
+    );
+
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.client-hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.client-hero p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.client-search {
+    max-width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+
+    background: white;
+    padding: 7px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.client-search input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    padding: 15px 18px;
+
+    font-size: 16px;
+
+    border-radius: 8px;
+}
+
+.client-search button {
+    border: none;
+
+    padding: 0 28px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.client-search button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   AVAILABLE FREELANCERS
+========================================= */
+
+.available-section {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 55px 35px;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+    color: #111827;
+}
+
+.section-heading p {
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FREELANCER GRID
+========================================= */
+
+.freelancer-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* =========================================
+   FREELANCER CARD
+========================================= */
+
+.freelancer-card {
+    min-width: 0;
+
+    min-height: 330px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.freelancer-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+.freelancer-card-content {
+    min-width: 0;
+}
+
+.freelancer-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 14px;
+
+    color: #111827;
+
+    word-break: break-word;
+}
+
+.job-description {
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+
+    display: -webkit-box;
+    /* -webkit-line-clamp: 4; */
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+/* =========================
+   POST JOB SECTION
+========================= */
+
+.post-job-section {
+    padding: 70px 20px;
+    background: #f7f8fc;
+}
+
+.post-job-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.post-job-content h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.post-job-content > p {
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   POST JOB BUTTON
+========================= */
+
+.post-job-button {
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.post-job-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   JOB FORM
+========================= */
+
+.job-form {
+    margin-top: 30px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+
+/* =========================
+   FORM TITLE
+========================= */
+
+.job-form h3 {
+    text-align: center;
+
+    font-size: 25px;
+
+    color: #111827;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.job-form input,
+.job-form textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.job-form textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================
+   INPUT FOCUS
+========================= */
+
+.job-form input:focus,
+.job-form textarea:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.job-form input::placeholder,
+.job-form textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-job-button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.submit-job-button:hover {
+    background: #15803d;
+}
+
+.submit-job-button:disabled {
+    background: #9ca3af;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-message {
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    text-align: center;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message {
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    text-align: center;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .post-job-section {
+        padding: 50px 15px;
+    }
+
+    .post-job-content h2 {
+        font-size: 26px;
+    }
+
+    .job-form {
+        padding: 25px 20px;
+    }
+
+    .job-form h3 {
+        font-size: 22px;
+    }
+
+}
+/* =========================================
+   JOB INFO
+========================================= */
+
+.job-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.job-info div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.job-info span {
+    font-size: 13px;
+
+    color: #9ca3af;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.job-info strong {
+    font-size: 14px;
+
+    color: #374151;
+
+    line-height: 1.5;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   VIEW DETAILS BUTTON
+========================================= */
+
+.view-details-button {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.view-details-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status-message {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    color: #6b7280;
+}
+
+.status-message h3 {
+    color: #374151;
+
+    margin-bottom: 8px;
+}
+
+.status-message.error {
+    color: #dc2626;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.success-message {
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    padding: 15px 20px;
+
+    background: #ecfdf5;
+
+    border: 1px solid #a7f3d0;
+
+    border-radius: 10px;
+
+    color: #047857;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   POST JOB SECTION
+========================================= */
+
+.post-job-section {
+    background: #111827;
+
+    padding: 65px 30px;
+
+    text-align: center;
+}
+
+.post-job-content {
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+.post-job-content h2 {
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.post-job-content p {
+    color: #d1d5db;
+
+    font-size: 17px;
+
+    margin-bottom: 28px;
+}
+
+.post-job-button {
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.post-job-button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CLIENT JOB FORM SECTION
+========================================= */
+
+.client-job-form-section {
+    background: #f7f8fc;
+
+    padding: 55px 25px;
+}
+
+.client-job-form-card {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.client-job-form-card h2 {
+    margin-bottom: 8px;
+
+    font-size: 28px;
+
+    color: #111827;
+}
+
+.client-job-form-card > p {
+    margin-bottom: 30px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    background: white;
+
+    transition: border 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================================
+   TWO COLUMN FORM ROW
+========================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   FORM BUTTONS
+========================================= */
+
+.form-buttons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.submit-job,
+.cancel-job {
+    flex: 1;
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.submit-job {
+    background: #2563eb;
+
+    color: white;
+}
+
+.submit-job:hover {
+    background: #1d4ed8;
+}
+
+.cancel-job {
+    background: #e5e7eb;
+
+    color: #374151;
+}
+
+.cancel-job:hover {
+    background: #d1d5db;
+}
+
+
+/* =========================================
+   CATEGORY SECTION
+========================================= */
+
+.category-section {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 60px 35px;
+}
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.category-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.category-card h3 {
+    margin-bottom: 8px;
+
+    color: #111827;
+}
+
+.category-card p {
+    color: #6b7280;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FREELANCER DETAILS MODAL
+========================================= */
+
+.job-modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.job-details {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+}
+
+.close-button {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    color: #6b7280;
+
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #111827;
+}
+
+.job-details h2 {
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+.details-location {
+    color: #6b7280;
+
+    margin-bottom: 25px;
+}
+
+.details-section {
+    margin-bottom: 22px;
+}
+
+.details-section h4 {
+    margin-bottom: 10px;
+
+    color: #374151;
+}
+
+.details-section p {
+    color: #6b7280;
+
+    line-height: 1.6;
+}
+
+.details-skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.details-skills span {
+    padding: 7px 12px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MODAL ACTIONS
+========================================= */
+
+.details-actions {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.message-button,
+.work-request-button {
+    flex: 1;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.message-button {
+    background: white;
+
+    color: #2563eb;
+
+    border: 1px solid #2563eb;
+}
+
+.message-button:hover {
+    background: #eff6ff;
+}
+
+.work-request-button {
+    background: #2563eb;
+
+    color: white;
+
+    border: 1px solid #2563eb;
+}
+
+.work-request-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .freelancer-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .client-hero {
+        padding: 55px 20px;
+    }
+
+    .client-hero h1 {
+        font-size: 34px;
+    }
+
+    .client-hero p {
+        font-size: 16px;
+    }
+
+    .client-search {
+        flex-direction: column;
+
+        gap: 8px;
+
+        padding: 8px;
+    }
+
+    .client-search button {
+        padding: 13px;
+    }
+
+
+    .available-section,
+    .category-section {
+        padding: 40px 20px;
+    }
+
+
+    .freelancer-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .post-job-section {
+        padding: 50px 20px;
+    }
+
+    .post-job-content h2 {
+        font-size: 27px;
+    }
+
+
+    .client-job-form-section {
+        padding: 35px 15px;
+    }
+
+    .client-job-form-card {
+        padding: 25px 20px;
+    }
+
+    .client-job-form-card h2 {
+        font-size: 25px;
+    }
+
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+
+    .details-actions {
+        flex-direction: column;
+    }
+
+
+    .job-details {
+        padding: 28px 22px;
+    }
+
+}

@@ -1,0 +1,121 @@
+.freelancer-registration {
+    min-height: 100vh;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.freelancer-card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.freelancer-card h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 30px;
+}
+
+.freelancer-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.freelancer-card h2 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.freelancer-form-group {
+    margin-bottom: 18px;
+}
+
+.freelancer-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #333;
+}
+
+.freelancer-form-group input,
+.freelancer-form-group select,
+.freelancer-form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+}
+
+.freelancer-form-group input:focus,
+.freelancer-form-group select:focus,
+.freelancer-form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.freelancer-form-group textarea {
+    resize: vertical;
+}
+
+.freelancer-card button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.freelancer-card button:hover {
+    background: #1d4ed8;
+}
+.freelancer-error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.freelancer-success {
+    color: #16a34a;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+}
+@media (max-width: 600px) {
+
+    .freelancer-registration {
+        padding: 20px 12px;
+    }
+
+    .freelancer-card {
+        padding: 25px 20px;
+    }
+
+    .freelancer-card h1 {
+        font-size: 25px;
+    }
+
+    .freelancer-card h2 {
+        font-size: 18px;
+    }
+}
